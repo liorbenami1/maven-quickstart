@@ -5,6 +5,7 @@ pipeline {
   }
   tools {
     maven 'M3'
+    java 'JAVA8'
   }
   stages {
     stage('checkout') {
