@@ -5,11 +5,6 @@ pipeline {
     maven 'M3'
   }
   stages {
-    stage('checkout') {
-      steps {
-        git 'https://github.com/levep/maven-quickstart.git'
-      }
-    }
     stage('Build') {
       steps {
         sh 'mvn clean compile'
